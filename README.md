@@ -4,9 +4,11 @@ To create a large number of QR Connect pages, you can use a CSV file containing 
 
 > HINT: Check out the examples at the bottom to get an idea of how a csv upload file should look.
 
-#### Example file
+#### Example file that creates two pages:
 
 **[View Example CSV File Here](https://github.com/RikusWiehahn/QR-Connect-CSV/blob/main/example.csv)**
+
+**[Download Example CSV File](https://github.com/RikusWiehahn/QR-Connect-CSV/archive/refs/tags/v1.0.zip)**
 
 <br/>
 
