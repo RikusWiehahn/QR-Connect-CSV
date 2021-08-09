@@ -1,4 +1,4 @@
-# Creating QR Connect pages in bulk via a .CSV file
+# Creating pages in bulk via CSV
 
 To create a large number of QR Connect pages, you can use a CSV file containing each page in a long list format.
 
@@ -127,10 +127,10 @@ Raw text in .csv file:
 
 ```
 ...
-new_section 
-section_type, HEADING_H1 
-text, "The heading you want..." 
-section_end 
+new_section
+section_type, HEADING_H1
+text, The heading you want...
+section_end
 ...
 ```
 
@@ -155,10 +155,10 @@ Raw text in .csv file:
 
 ```
 ...
-new_section 
-section_type, HEADING_H2 
-text, "The sub heading you want..." 
-section_end 
+new_section
+section_type, HEADING_H2
+text, The sub heading you want...
+section_end
 ...
 ```
 
@@ -183,10 +183,10 @@ Raw text in .csv file:
 
 ```
 ...
-new_section 
-section_type, TEXT 
-text, "The paragraph you need..." 
-section_end 
+new_section
+section_type, TEXT
+text, The paragraph you need...
+section_end
 ...
 ```
 
@@ -211,11 +211,11 @@ Raw text in .csv file:
 
 ```
 ...
-new_section 
-section_type, LINK 
-url, "https://example.com" 
-label, "Example website link" 
-section_end 
+new_section
+section_type, LINK
+url, https://example.com
+label, Example website link
+section_end
 ...
 ```
 
@@ -241,10 +241,10 @@ Raw text in .csv file:
 
 ```
 ...
-new_section 
-section_type, YOUTUBE_VIDEO 
-url, "https://www.youtube.com/watch?v=y6120QOlsfU" 
-section_end 
+new_section
+section_type, YOUTUBE_VIDEO
+url, https://www.youtube.com/watch?v=y6120QOlsfU
+section_end
 ...
 ```
 
@@ -271,11 +271,11 @@ Raw text in .csv file:
 
 ```
 ...
-new_section 
-section_type, TEXT_QUESTION 
-text, "What is your name?" 
-required, FALSE 
-section_end 
+new_section
+section_type, TEXT_QUESTION
+text, "What is your name?"
+required, FALSE
+section_end
 ...
 ```
 
@@ -303,15 +303,15 @@ Raw text in .csv file:
 
 ```
 ...
-new_section 
-section_type, SINGLE_SELECT_QUESTION 
-text, "What is your preferred pizza?" 
-required, FALSE 
-answer, "Pepperoni" 
-answer, "Hawaiian" 
-answer, "Vegetarian" 
-answer, "Meat lovers" 
-section_end 
+new_section
+section_type, SINGLE_SELECT_QUESTION
+text, What is your preferred pizza?
+required, FALSE
+answer, Pepperoni
+answer, Hawaiian
+answer, Vegetarian
+answer, Meat lovers
+section_end
 ...
 ```
 
@@ -343,16 +343,16 @@ Raw text in .csv file:
 
 ```
 ...
-new_section 
-section_type, MULTI_SELECT_QUESTION 
-text, "Do you believe any of the following?" 
-required, FALSE 
-answer, "The Illuminati control everything" 
-answer, "The pyramids were built by aliens" 
-answer, "The moon landing was faked" 
-answer, "Life is a simulation" 
-answer, "The earth is flat" 
-section_end 
+new_section
+section_type, MULTI_SELECT_QUESTION
+text, Do you believe any of the following?
+required, FALSE
+answer, The Illuminati control everything
+answer, The pyramids were built by aliens
+answer, The moon landing was faked
+answer, Life is a simulation
+answer, The earth is flat
+section_end
 ...
 ```
 
@@ -365,11 +365,11 @@ In a spreadsheet
 | section_type | MULTI_SELECT_QUESTION                |
 | text         | Do you believe any of the following? |
 | required     | FALSE                                |
-| answer       | "The Illuminati control everything"  |
-| answer       | "The pyramids were built by aliens"  |
-| answer       | "The moon landing was faked"         |
-| answer       | "Life is a simulation"               |
-| answer       | "The earth is flat"                  |
+| answer       | The Illuminati control everything    |
+| answer       | The pyramids were built by aliens    |
+| answer       | The moon landing was faked           |
+| answer       | Life is a simulation                 |
+| answer       | The earth is flat                    |
 | section_end  |                                      |
 | ...          |                                      |
 
@@ -385,11 +385,11 @@ Raw text in .csv file:
 
 ```
 ...
-new_section 
-section_type, IMAGE_QUESTION 
-text, "Please upload an image of the damaged item" 
-required, TRUE 
-section_end 
+new_section
+section_type, IMAGE_QUESTION
+text, Please upload an image of the damaged item
+required, TRUE
+section_end
 ...
 ```
 
@@ -420,14 +420,14 @@ Raw text in .csv file:
 
 ```
 ...
-new_section 
-section_type, BOOLEAN_NOTIFICATION_QUESTION 
-text, "Do you agree to these conditions?" 
-notify_if, NO 
-required, TRUE 
-notification_text, "Someone has declined the conditions..." 
-group_to_notify, PROJECT_MEMBERS 
-section_end 
+new_section
+section_type, BOOLEAN_NOTIFICATION_QUESTION
+text, Do you agree to these conditions?
+notify_if, NO
+required, TRUE
+notification_text, Someone has declined the conditions...
+group_to_notify, PROJECT_MEMBERS
+section_end
 ...
 ```
 
@@ -456,45 +456,45 @@ A submittable form for a QR code that gets scanned when a piece of equipment is 
 Raw text in .csv file
 
 ```
-new_page 
-page_title, "Machine 408" 
-page_type, SUBMITTABLE_FORM 
-authentication, NONE 
-published, TRUE 
-page_content_start 
-new_section 
-section_type, TEXT 
-text, "Please report an issue with by filling out the form" 
-section_end 
-new_section 
-section_type, SINGLE_SELECT_QUESTION 
-text, "How badly broken is it?" 
-required, TRUE 
-answer, "It's unusable" 
-answer, "On it's last legs" 
-answer, "Requires attention in the next 3 months" 
-answer, "It's just behaving abnormally" 
-section_end 
-new_section 
-section_type, TEXT_QUESTION 
-text, "Describe the problem in detail is needed" 
-required, FALSE 
-section_end 
-new_section 
-section_type, IMAGE_QUESTION 
-text, "Please upload an image of the damage if needed" 
-required, FALSE 
-section_end 
-new_section 
-section_type, BOOLEAN_NOTIFICATION_QUESTION 
-text, "Is this issue preventing anyone from doing their job?" 
-notify_if, YES 
-required, TRUE 
-notification_text, "Potential work stoppage caused by machine 408" 
-group_to_notify, COMPANY_ADMINS 
-section_end 
-page_content_end 
-page_end 
+new_page
+page_title, Machine 408
+page_type, SUBMITTABLE_FORM
+authentication, NONE
+published, TRUE
+page_content_start
+new_section
+section_type, TEXT
+text, Please report an issue with by filling out the form
+section_end
+new_section
+section_type, SINGLE_SELECT_QUESTION
+text, How badly broken is it?
+required, TRUE
+answer, It's unusable
+answer, On it's last legs
+answer, Requires attention in the next 3 months
+answer, It's just behaving abnormally
+section_end
+new_section
+section_type, TEXT_QUESTION
+text, Describe the problem in detail is needed
+required, FALSE
+section_end
+new_section
+section_type, IMAGE_QUESTION
+text, Please upload an image of the damage if needed
+required, FALSE
+section_end
+new_section
+section_type, BOOLEAN_NOTIFICATION_QUESTION
+text, Is this issue preventing anyone from doing their job?
+notify_if, YES
+required, TRUE
+notification_text, Potential work stoppage caused by machine 408
+group_to_notify, COMPANY_ADMINS
+section_end
+page_content_end
+page_end
 
 ```
 
