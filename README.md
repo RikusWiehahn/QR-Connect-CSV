@@ -1,4 +1,4 @@
-# Creating pages in bulk via CSV
+# Creating QR Connect pages in bulk via a .CSV file
 
 To create a large number of QR Connect pages, you can use a CSV file containing each page in a long list format.
 
