@@ -548,3 +548,7 @@ In a spreadsheet:
 | section_end        |                                                       |
 | page_content_end   |                                                       |
 | page_end           |                                                       |
+
+## Resulting QR Page
+
+<img src="https://raw.githubusercontent.com/RikusWiehahn/QR-Connect-CSV/main/preview.png" alt="Preview" width="540"/>
