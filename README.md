@@ -56,8 +56,8 @@ Each line in the CSV gives the page builder an instruction to start or stop a pr
 ## Common mistakes
 
 - Having an empty column between values, the page builder only reads the first two columns of any row.
-- Spelling mistakes in any of the commands (new_page, published etc)
-- Spelling mistakes in any of the section type identifiers (TEXT, HEADING_H1 etc)
+- Spelling mistakes in any of the commands (`new_page`, `published` etc)
+- Spelling mistakes in any of the section type identifiers (`TEXT`, `HEADING_H1` etc)
 
 ## Required Page commands
 
