@@ -16,7 +16,6 @@ To create a large number of QR Connect pages, you can use a CSV file containing 
 
 - [Setting up a page](#setting-up-a-page)
 - [Section types](#section-types)
-- [Full section formats](#full-section-formats)
 - [Headings](#headings)
 - [Sub headings](#sub-headings)
 - [Paragraphs](#paragraphs)
