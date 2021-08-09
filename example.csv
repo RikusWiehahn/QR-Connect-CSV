@@ -1,14 +1,14 @@
-new_page
+new_page,
 page_title, Machine 408
 page_type, SUBMITTABLE_FORM
 authentication, NONE
 published, TRUE
-page_content_start
-new_section
+page_content_start,
+new_section,
 section_type, TEXT
 text, Please report an issue with by filling out the form
-section_end
-new_section
+section_end,
+new_section,
 section_type, SINGLE_SELECT_QUESTION
 text, How badly broken is it?
 required, TRUE
@@ -16,39 +16,39 @@ answer, It's unusable
 answer, On it's last legs
 answer, Requires attention in the next 3 months
 answer, It's just behaving abnormally
-section_end
-new_section
+section_end,
+new_section,
 section_type, TEXT_QUESTION
 text, Describe the problem in detail is needed
 required, FALSE
-section_end
-new_section
+section_end,
+new_section,
 section_type, IMAGE_QUESTION
 text, Please upload an image of the damage if needed
 required, FALSE
-section_end
-new_section
+section_end,
+new_section,
 section_type, BOOLEAN_NOTIFICATION_QUESTION
 text, Is this issue preventing anyone from doing their job?
 notify_if, YES
 required, TRUE
 notification_text, Potential work stoppage caused by machine 408
 group_to_notify, COMPANY_ADMINS
-section_end
-page_content_end
-page_end
+section_end,
+page_content_end,
+page_end,
 
-new_page
+new_page,
 page_title, Machine 409
 page_type, SUBMITTABLE_FORM
 authentication, NONE
 published, TRUE
-page_content_start
-new_section
+page_content_start,
+new_section,
 section_type, TEXT
 text, Please report an issue with by filling out the form
-section_end
-new_section
+section_end,
+new_section,
 section_type, SINGLE_SELECT_QUESTION
 text, How badly broken is it?
 required, TRUE
@@ -56,24 +56,24 @@ answer, It's unusable
 answer, On it's last legs
 answer, Requires attention in the next 3 months
 answer, It's just behaving abnormally
-section_end
-new_section
+section_end,
+new_section,
 section_type, TEXT_QUESTION
 text, Describe the problem in detail is needed
 required, FALSE
-section_end
-new_section
+section_end,
+new_section,
 section_type, IMAGE_QUESTION
 text, Please upload an image of the damage if needed
 required, FALSE
-section_end
-new_section
+section_end,
+new_section,
 section_type, BOOLEAN_NOTIFICATION_QUESTION
 text, Is this issue preventing anyone from doing their job?
 notify_if, YES
 required, TRUE
 notification_text, Potential work stoppage caused by machine 409
 group_to_notify, COMPANY_ADMINS
-section_end
-page_content_end
-page_end
+section_end,
+page_content_end,
+page_end,
