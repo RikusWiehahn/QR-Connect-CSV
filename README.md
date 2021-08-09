@@ -489,7 +489,7 @@ answer, It's just behaving abnormally
 section_end
 new_section
 section_type, TEXT_QUESTION
-text, Describe the problem in detail is needed
+text, Describe the problem in detail if needed
 required, FALSE
 section_end
 new_section
@@ -537,7 +537,7 @@ In a spreadsheet:
 | section_end        |                                                       |
 | new_section        |                                                       |
 | section_type       | TEXT_QUESTION                                         |
-| text               | Describe the problem in detail is needed              |
+| text               | Describe the problem in detail if needed              |
 | required           | FALSE                                                 |
 | section_end        |                                                       |
 | new_section        |                                                       |
