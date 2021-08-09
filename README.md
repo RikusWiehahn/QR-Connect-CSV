@@ -109,21 +109,21 @@ QR Connect pages can either be published or in a draft state.
 
 QR Connect pages are a list of smart sections or "blocks" that can be arranged in any order and allow you to do useful things. Here are the kinds of sections you can put into a page.
 
-| Section type                    | Description                                                          | Restrictions                     |
-| ------------------------------- | -------------------------------------------------------------------- | -------------------------------- |
-| `HEADING_H1`                    | Large heading                                                        | None                             |
-| `HEADING_H2`                    | Smaller heading                                                      | None                             |
-| `TEXT`                          | Paragraphs                                                           | None                             |
-| `LINK`                          | URL link                                                             | None                             |
-| `YOUTUBE_VIDEO`                 | Embedded YouTube video                                               | None                             |
-| `TEXT_QUESTION`                 | Question with input field                                            | Must be `SUBMITTABLE_FORM`       |
-| `SINGLE_SELECT_QUESTION`        | Question with multiple options but only one can be selected          | must be a `SUBMITTABLE_FORM`     |
-| `MULTI_SELECT_QUESTION`         | Checklist with multiple options and many can be selected             | Must be a `SUBMITTABLE_FORM`     |
-| `IMAGE_QUESTION`                | Question that asks a user to upload an image                         | Must be a `SUBMITTABLE_FORM`     |
-| `BOOLEAN_NOTIFICATION_QUESTION` | Yes / No question that sends an email alert depending on the answer. | Must be a `SUBMITTABLE_FORM`     |
-| `PDF`                           | A PDF file                                                           | Can't be created using CSV files |
-| `IMAGE`                         | An image                                                             | Can't be created using CSV files |
-| `VIDEO`                         | A video                                                              | Can't be created using CSV files |
+| Section type                    | Description                                                          | Restrictions                           |
+| ------------------------------- | -------------------------------------------------------------------- | -------------------------------------- |
+| `HEADING_H1`                    | Large heading                                                        | None                                   |
+| `HEADING_H2`                    | Smaller heading                                                      | None                                   |
+| `TEXT`                          | Paragraphs                                                           | None                                   |
+| `LINK`                          | URL link                                                             | None                                   |
+| `YOUTUBE_VIDEO`                 | Embedded YouTube video                                               | None                                   |
+| `TEXT_QUESTION`                 | Question with input field                                            | `page_type` must be `SUBMITTABLE_FORM` |
+| `SINGLE_SELECT_QUESTION`        | Question with multiple options but only one can be selected          | `page_type` must be `SUBMITTABLE_FORM` |
+| `MULTI_SELECT_QUESTION`         | Checklist with multiple options and many can be selected             | `page_type` must be `SUBMITTABLE_FORM` |
+| `IMAGE_QUESTION`                | Question that asks a user to upload an image                         | `page_type` must be `SUBMITTABLE_FORM` |
+| `BOOLEAN_NOTIFICATION_QUESTION` | Yes / No question that sends an email alert depending on the answer. | `page_type` must be `SUBMITTABLE_FORM` |
+| `PDF`                           | A PDF file                                                           | Can't be created using CSV files       |
+| `IMAGE`                         | An image                                                             | Can't be created using CSV files       |
+| `VIDEO`                         | A video                                                              | Can't be created using CSV files       |
 
 <br/>
 
