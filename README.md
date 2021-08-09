@@ -109,21 +109,21 @@ QR Connect pages can either be published or in a draft state.
 
 QR Connect pages are a list of smart sections or "blocks" that can be arranged in any order and allow you to do useful things. Here are the kinds of sections you can put into a page.
 
-| Section type             | Description                                                          | Restrictions                     |
-| ------------------------ | -------------------------------------------------------------------- | -------------------------------- |
-| `HEADING_H1`             | Large heading                                                        | None                             |
-| `HEADING_H2`             | Smaller heading                                                      | None                             |
-| `TEXT`                   | Paragraphs                                                           | None                             |
-| `LINK`                   | URL link                                                             | None                             |
-| `YOUTUBE_VIDEO`          | Embedded YouTube video                                               | None                             |
-| `TEXT_QUESTION`          | Question with input field                                            | Must be `SUBMITTABLE_FORM`       |
-| `SINGLE_SELECT_QUESTION` | Question with multiple options but only one can be selected          | must be a `SUBMITTABLE_FORM`     |
-| `MULTI_SELECT_QUESTION`  | Checklist with multiple options and many can be selected             | Must be a `SUBMITTABLE_FORM`     |
-| `IMAGE_QUESTION`         | Question that asks a user to upload an image                         | Must be a `SUBMITTABLE_FORM`     |
-| `NOTIFICATION_QUESTION`  | Yes / No question that sends an email alert depending on the answer. | Must be a `SUBMITTABLE_FORM`     |
-| `PDF`                    | A PDF file                                                           | Can't be created using CSV files |
-| `IMAGE`                  | An image                                                             | Can't be created using CSV files |
-| `VIDEO`                  | A video                                                              | Can't be created using CSV files |
+| Section type                    | Description                                                          | Restrictions                     |
+| ------------------------------- | -------------------------------------------------------------------- | -------------------------------- |
+| `HEADING_H1`                    | Large heading                                                        | None                             |
+| `HEADING_H2`                    | Smaller heading                                                      | None                             |
+| `TEXT`                          | Paragraphs                                                           | None                             |
+| `LINK`                          | URL link                                                             | None                             |
+| `YOUTUBE_VIDEO`                 | Embedded YouTube video                                               | None                             |
+| `TEXT_QUESTION`                 | Question with input field                                            | Must be `SUBMITTABLE_FORM`       |
+| `SINGLE_SELECT_QUESTION`        | Question with multiple options but only one can be selected          | must be a `SUBMITTABLE_FORM`     |
+| `MULTI_SELECT_QUESTION`         | Checklist with multiple options and many can be selected             | Must be a `SUBMITTABLE_FORM`     |
+| `IMAGE_QUESTION`                | Question that asks a user to upload an image                         | Must be a `SUBMITTABLE_FORM`     |
+| `BOOLEAN_NOTIFICATION_QUESTION` | Yes / No question that sends an email alert depending on the answer. | Must be a `SUBMITTABLE_FORM`     |
+| `PDF`                           | A PDF file                                                           | Can't be created using CSV files |
+| `IMAGE`                         | An image                                                             | Can't be created using CSV files |
+| `VIDEO`                         | A video                                                              | Can't be created using CSV files |
 
 <br/>
 
@@ -421,7 +421,7 @@ In a spreadsheet
 
 ## Notification triggering questions
 
-Identifier: `NOTIFICATION_QUESTION`
+Identifier: `BOOLEAN_NOTIFICATION_QUESTION`
 
 - `required` can be followed by `TRUE` of `FALSE`
 - `notify_if` can be followed by `YES`, `NO`, or `NONE`
@@ -433,7 +433,7 @@ Raw text in .csv file:
 ```
 ...
 new_section
-section_type, NOTIFICATION_QUESTION
+section_type, BOOLEAN_NOTIFICATION_QUESTION
 text, Do you agree to these conditions?
 notify_if, NO
 required, TRUE
@@ -449,7 +449,7 @@ In a spreadsheet
 | ----------------- | -------------------------------------- |
 | ...               |                                        |
 | new_section       |                                        |
-| section_type      | NOTIFICATION_QUESTION                  |
+| section_type      | BOOLEAN_NOTIFICATION_QUESTION          |
 | text              | Do you agree to these conditions?      |
 | notify_if         | NO                                     |
 | required          | TRUE                                   |
@@ -498,7 +498,7 @@ text, Please upload an image of the damage if needed
 required, FALSE
 section_end
 new_section
-section_type, NOTIFICATION_QUESTION
+section_type, BOOLEAN_NOTIFICATION_QUESTION
 text, Is this issue preventing anyone from doing their job?
 notify_if, YES
 required, TRUE
@@ -546,7 +546,7 @@ In a spreadsheet:
 | required           | FALSE                                                 |
 | section_end        |                                                       |
 | new_section        |                                                       |
-| section_type       | NOTIFICATION_QUESTION                                 |
+| section_type       | BOOLEAN_NOTIFICATION_QUESTION                         |
 | text               | Is this issue preventing anyone from doing their job? |
 | notify_if          | YES                                                   |
 | required           | TRUE                                                  |
