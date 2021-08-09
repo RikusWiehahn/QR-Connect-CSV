@@ -64,7 +64,7 @@ The following lines tell the page builder what kind of page to create and when t
 | `authentication`         | Either:<br/>`NONE`<br/>`PROJECT`<br/>`COMPANY`     |
 | `published`              | Either:<br/>`TRUE`<br/>`FALSE`                     |
 | `page_content_start`     | (leave rest of line empty)                         |
-| [SECTION DATA SEE BELOW] | Instructions for the actual content of the page  |
+| [SECTION DATA SEE BELOW] | Instructions for the actual content of the page    |
 | `page_content_end`       | (leave rest of line empty)                         |
 | `page_end`               | (leave rest of line empty)                         |
 
@@ -469,7 +469,7 @@ published, TRUE
 page_content_start
 new_section
 section_type, TEXT
-text, Please report an issue with by filling out the form
+text, Please report an issue by filling out the form
 section_end
 new_section
 section_type, SINGLE_SELECT_QUESTION
@@ -517,7 +517,7 @@ In a spreadsheet:
 | page_content_start |                                                       |
 | new_section        |                                                       |
 | section_type       | TEXT                                                  |
-| text               | Please report a machine issue by filling out the form |
+| text               | Please report an issue by filling out the form        |
 | section_end        |                                                       |
 | new_section        |                                                       |
 | section_type       | SINGLE_SELECT_QUESTION                                |
