@@ -59,7 +59,7 @@ The following lines tell the page builder what kind of page to create and when t
 | `authentication`         | Either:<br/>`NONE`<br/>`PROJECT`<br/>`COMPANY`     |
 | `published`              | Either:<br/>`TRUE`<br/>`FALSE`                     |
 | `page_content_start`     | (leave rest of line empty)                         |
-| [SECTION DATA SEE BELOW] | Multiple lines specific to a page content section  |
+| [SECTION DATA SEE BELOW] | Instructions for the actual content of the page  |
 | `page_content_end`       | (leave rest of line empty)                         |
 | `page_end`               | (leave rest of line empty)                         |
 
