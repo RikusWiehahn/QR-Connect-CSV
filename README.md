@@ -1,8 +1,8 @@
-# Creating pages in bulk via CSV
+# Creating pages in bulk via .csv 🤖
 
-To create a large number of QR Connect pages, you can use a CSV file containing each page in a long list format.
+To create a large number of QR Connect pages, you can use a .csv file with each page in a long list.
 
-> HINT: Check out the examples at the bottom to get an idea of how a csv upload file should look.
+> HINT: Check out the examples at the bottom to get an idea of how a csv upload file should look!
 
 #### Example file that creates two pages:
 
@@ -32,6 +32,8 @@ To create a large number of QR Connect pages, you can use a CSV file containing 
 <br/>
 
 # Getting started
+
+[What is a CSV file?](https://en.wikipedia.org/wiki/Comma-separated_values)
 
 1. Click the cog symbol next to the folder's title on a folder page.
 2. Click the "Create pages using CSV" option
